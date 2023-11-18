@@ -34,10 +34,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .main {
   width: 50rem;
+  position: relative;
 }
 
 .app-header {
@@ -256,4 +259,30 @@ progress {
 .counter * {
   font-size: inherit;
   padding: 0.8rem;
+}
+
+/* Media-queries */
+@media (max-width: 950px) {
+  .app-header {
+    max-width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .app-header h1 {
+    font-size: 3rem;
+  }
+
+  .app-header img {
+    width: 8rem;
+    height: auto;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .main .progress {
+    width: 90%;
+  }
 }
