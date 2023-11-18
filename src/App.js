@@ -11,6 +11,7 @@ import Progress from "./components/Progress";
 import FinishScreen from "./components/FinishScreen";
 import FooterComponent from "./components/FooterComponent";
 import Timer from "./components/Timer";
+import QUESTIONS from "./components/data/data";
 
 const SECS_PER_QUESTION = 30;
 
@@ -98,10 +99,8 @@ export default function App() {
   useEffect(function () {
     async function getQuestions() {
       try {
-        const res = await fetch("http://localhost:9000/questions");
-        const data = await res.json();
-
-        dispatch({ type: "dataReceived", payload: data });
+        const res = QUESTIONS;
+        dispatch({ type: "dataReceived", payload: res });
       } catch (err) {
         dispatch({ type: "dataFailed" });
         console.error(err.message);
