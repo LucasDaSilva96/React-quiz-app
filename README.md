@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# This React app is a quiz game designed to test the user's knowledge with a set of questions.
+
+![Alt text](./src/img/quiz-app.png "Generator")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

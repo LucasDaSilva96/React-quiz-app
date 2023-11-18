@@ -11,7 +11,7 @@ import Progress from "./components/Progress";
 import FinishScreen from "./components/FinishScreen";
 import FooterComponent from "./components/FooterComponent";
 import Timer from "./components/Timer";
-import QUESTIONS from "./components/data/data";
+import QUESTIONS from "./data/data";
 
 const SECS_PER_QUESTION = 30;
 

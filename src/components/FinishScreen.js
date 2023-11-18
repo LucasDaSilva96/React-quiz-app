@@ -13,7 +13,7 @@ function FinishScreen({ points, maxPossiblePoints, highScore, dispatch }) {
   return (
     <React.Fragment>
       <p className="result">
-        <span>{emoji}</span> You scored <strong>{points}</strong> out of
+        <span>{emoji}</span> You scored <strong>{points}</strong> out of{" "}
         {maxPossiblePoints} ({Math.ceil(percentage)}%)
       </p>
 
